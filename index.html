@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title" id="Welcome">
+        <h1>Welcome to the Quiz</h1>
+        <button class="start-btn" id="btn-start">Start Quiz</button>
+    </div>
+    
+    <div class="main">
+        <div class="box">
+            <div class="quiz-screen" id="quiz-start" style="display: none;">
+                <div class="inner-div">
+                    <p class="question" id="ques">Question</p>
+                    <br />
+                    <div class="btn-cen">
+                        <button class="ans-btn">
+                            <input onclick="clicked()" type="radio" value="1" name="options" id="">
+                            <label for="" id="opt1"></label> <br />
+                        </button>
+    
+                        <button class="ans-btn">
+                            <input onclick="clicked()" type="radio" value="2" name="options" id="">
+                            <label for="" id="opt2"></label> <br />
+                        </button>
+    
+                        <button class="ans-btn">
+                            <input onclick="clicked()" type="radio" value="3" name="options" id="">
+                            <label for="" id="opt3"></label> <br />
+                        </button>
+
+                    </div>
+                    <br />
+                    <br />
+                    <button class="btn-next" disabled id="btn" onclick="nextQuestion()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.all.min.js"></script>
+    <script src="add.js"></script>
+</body>
+</html>
